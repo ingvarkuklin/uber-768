@@ -2,15 +2,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-@media (max-width: 1200px) {
-  * .menu_item {
-    padding-right: 20px;
-  }
-  * .menu_link {
-    font-size: 12px;
-  }
-}
-
 * header {
   position: relative;
   height: 50px;
@@ -648,5 +639,14 @@
   text-transform: uppercase;
   color: #1fbad6;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  * .menu_item {
+    padding-right: 20px;
+  }
+  * .menu_link {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -16,13 +16,14 @@ nav
   margin: 0
   list-style-type: none
 
-  .menu_link
+  
+  &_link
     color: #ffffff
     font-size: 15px
     font-weight: 300
     text-decoration: none
 
-  .menu_item
+  &_item
     border-right: 2px dotted black
     padding-right: 28px
     &:last-child
@@ -63,6 +64,7 @@ nav
     text-transform: uppercase
     color: #ffffff
     line-height: 12px
+    text-align: right
 
   &_btn
     margin-top: 19px
@@ -130,8 +132,7 @@ nav
     @include btn_hover
     
 
-.reasons
-  padding: 71px 0 65px 0
+
 
 .label
   position: relative
@@ -181,37 +182,39 @@ nav
         color: #fff
 
 
-.reasons .reasons_blok
-  display: flex
-  justify-content: center
-  align-items: center
-  margin-top: 35px
+.reasons
+  padding: 71px 0 65px 0
+  &_blok
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
 
-  .reasons_round
-        display: flex
-        justify-content: center
-        align-items: center
-        margin-right: 26px
-        width: 113px
-        height: 113px
-        background-color: #1eacc7
-        border-radius: 100%
+  &_round
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-right: 26px
+    width: 113px
+    height: 113px
+    background-color: #1eacc7
+    border-radius: 100%
 
-  .reasons_descr
+  &_descr
     width: 342px
 
-    .reasons_subtitle
-      line-height: 21px
-      font-size: 17px
-      font-weight: 400
-      color: #1eacc7
+  &_subtitle
+    line-height: 21px
+    font-size: 17px
+    font-weight: 400
+    color: #1eacc7
 
-    .reasons_text
-      font-size: 15px
-      font-weight: 300
-      line-height: 21px
-      text-align: justify
-      color: #202020
+  &_text
+    font-size: 15px
+    font-weight: 300
+    line-height: 21px
+    text-align: justify
+    color: #202020
 
 .mobile
     min-height: 864px
@@ -290,11 +293,13 @@ nav
     min-height: 895px
     padding: 57px 0 138px 0
     background: url('../img/phone_bg.png') center (center / cover) no-repeat
+
     &_img
         position: relative
         display: block
         margin: 56px auto 0 auto
         z-index: 2
+
     &_descr
         margin-top: 4px
         font-size: 17px
@@ -391,7 +396,7 @@ footer
         display: flex
         justify-content: space-between
         align-items: flex-start
-        padding-top: 32px    
+        padding-top: 32px
     &_wrapper > div
         width: 33%
         &:nth-child(3)
